@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Your Recipe - 30-Second Recipes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Submit Your Recipe</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="breakfast.html">Breakfast</a></li>
+            <li><a href="lunch.html">Lunch</a></li>
+            <li><a href="dinner.html">Dinner</a></li>
+            <li><a href="dessert.html">Dessert</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form id="recipeForm">
+            <label for="recipeName">Recipe Name:</label>
+            <input type="text" id="recipeName" name="recipeName" required>
+
+            <label for="recipeIngredients">Ingredients (separated by commas):</label>
+            <textarea id="recipeIngredients" name="recipeIngredients" required></textarea>
+
+            <label for="recipeInstructions">Instructions:</label>
+            <textarea id="recipeInstructions" name="recipeInstructions" required></textarea>
+
+            <button type="submit">Submit Recipe</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 30-Second Recipes</p>
+    </footer>
+    <script src="submitRecipe.js"></script>
+</body>
+</html>

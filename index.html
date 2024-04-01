@@ -8,44 +8,52 @@
 </head>
 <body>
     <header>
-        <h1>30-Second Recipes</h1>
+        <h1>Welcome to 30-Second Recipes</h1>
     </header>
     <nav>
         <ul>
+            <li><a href="index.html">Home</a></li>
             <li><a href="breakfast.html">Breakfast</a></li>
             <li><a href="lunch.html">Lunch</a></li>
-            <li><a href="#dinner.html">Dinner</a></li>
+            <li><a href="dinner.html">Dinner</a></li>
             <li><a href="dessert.html">Dessert</a></li>
+            <li><a href="submit-recipe.html">Submit Your Recipe</a></li>
         </ul>
     </nav>
     <main>
-        <section id="breakfast">
-            <h2>Breakfast Recipes</h2>
+        <!-- Welcome Message -->
+        <section id="welcome">
+            <h2>A Fresh Approach to Recipes</h2>
+            <p>Welcome to 30-Second Recipes, your go-to destination for quick, easy, and delicious meals. Whether you're a beginner or a seasoned chef, we've got something for everyone.</p>
         </section>
-        <section id="lunch">
-            <h2>Lunch Recipes</h2>
+        
+        <!-- Featured Recipes -->
+        <section id="featured-recipes">
+            <h2>Featured Recipes</h2>
+            <div class="recipe-gallery">
+                <article class="recipe-feature">
+                    <img src="images/pancake.jpeg" alt="Feature 1">
+                    <h3>Quick Pancake</h3>
+                    <p>Start your day with these easy and quick pancakes.</p>
+                </article>
+                <article class="recipe-feature">
+                    <img src="images/feature-2.jpeg" alt="Feature 2">
+                    <h3>20-Minute Chicken Pasta</h3>
+                    <p>A delicious dinner that's ready in a flash.</p>
+                </article>
+                <article class="recipe-feature">
+                    <img src="images/feature-3.jpeg" alt="Feature 3">
+                    <h3>Easy Chocolate Dessert</h3>
+                    <p>Indulge in this simple yet decadent dessert.</p>
+                </article>
+            </div>
         </section>
-        <section id="dinner">
-            <h2>Dinner Recipes</h2>
+        
+        <!-- About Us -->
+        <section id="about">
+            <h2>About Us</h2>
+            <p>At 30-Second Recipes, we believe in simplifying the cooking process without compromising on taste. Our mission is to provide you with quick, accessible, and tasty recipes that fit your busy lifestyle.</p>
         </section>
-        <section id="Dessert">
-            <h2>Dessert Recipes</h2>
-        </section>
-
-        <h2>Submit Your Recipe</h2>
-<form id="recipeForm">
-    <label for="recipeName">Recipe Name:</label>
-    <input type="text" id="recipeName" name="recipeName" required>
-
-    <label for="recipeIngredients">Ingredients (separated by commas):</label>
-    <textarea id="recipeIngredients" name="recipeIngredients" required></textarea>
-
-    <label for="recipeInstructions">Instructions:</label>
-    <textarea id="recipeInstructions" name="recipeInstructions" required></textarea>
-
-    <button type="submit">Submit Recipe</button>
-    <script src="submitRecipe.js"></script>
-</form>
     </main>
     <footer>
         <p>&copy; 2024 30-Second Recipes</p>
